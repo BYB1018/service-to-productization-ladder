@@ -1,0 +1,11 @@
+{
+  "skill":"service-to-productization-ladder","version":"0.1.0","source_book":"24 条 Bilibili AI 搞钱视频证据包","darwin_compatible":true,
+  "test_cases":[
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"我的周报代写服务每周都重复，怎么做成产品？","expected_behavior":"激活本 Skill，先画交付再逐阶封装。","notes":"重复服务产品化"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"我该把咨询流程做成模板、Skill 还是 SaaS？","expected_behavior":"激活本 Skill，按稳定性和运行责任选择阶梯。","notes":"产品形态选择"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"Fiverr 已经有十几个相似订单，怎样变成虚拟产品？","expected_behavior":"激活本 Skill，从真实交付提取稳定残余。","notes":"接单到产品"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"我有个从未卖过的 AI 日记 App 点子，帮我直接写产品化路线。","expected_behavior":"不激活；应先验证机会与付款。","notes":"无需求证据诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"客户要自动汇总 CSV、主管确认后外发，应该按什么系统复杂度报价？","expected_behavior":"不激活；应激活 agent-delivery-scope。","notes":"兄弟 Skill 混淆"},
+    {"id":"edge-01","type":"edge_case","prompt":"我只有三个高客单定制客户，每单差异很大，还要产品化吗？","expected_behavior":"激活但建议停留服务层，先继续记录，不强求软件化。","notes":"低频高客单边界"}
+  ],"minimum_pass_rate":0.8
+}
